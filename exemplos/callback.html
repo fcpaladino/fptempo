@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>FPTempo</title>
+    <link rel="stylesheet" href="../dist/css/weather.min.css">
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/jquery.cookie.js"></script>
+    <script src="../dist/js/fptempo.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.previsao-tempo').fpTempo({
+                cidade: 'Londrina',
+                estado: 'PR',
+                format: 'callback',
+                callback: function (target, data) {
+                    $('.retorno').text(JSON.stringify(data, null, '\t'));
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="previsao-tempo">
+    <pre class="retorno"></pre>
+</div>
+
+</body>
+</html>

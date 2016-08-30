@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>FPTempo</title>
+    <link rel="stylesheet" href="../dist/css/weather.min.css">
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/jquery.cookie.js"></script>
+    <script src="../dist/js/fptempo.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.previsao-tempo').fpTempo();
+        });
+    </script>
+</head>
+<body>
+
+<div class="previsao-tempo" data-cidade="Londrina" data-estado="PR">
+    <h1 data-tempo="cidade"></h1>
+    <div><span data-tempo="temperatura"></span> Graus</div>
+    <div data-tempo="icone"></div>
+    <div><span data-tempo="descricao"></span></div>
+    <div>Temperatura Máxima: <span data-tempo="maxima"></span> Graus</div>
+    <div>Temperatura Mínima: <span data-tempo="minima"></span> Graus</div>
+    <div data-tempo="data-completa"></div>
+    <div>Dia: <span data-tempo="dia"></span></div>
+    <div data-tempo="dia-semana"></div>
+    <div data-tempo="dia-mes"></div>
+
+    <h2>Próximos dias da semana</h2>
+    <ol>
+        <li>
+            <div><span data-tempo="temperatura-1"></span> Graus</div>
+            <div data-tempo="icone-1"></div>
+            <div><span data-tempo="descricao-1"></span></div>
+            <div>Temperatura Máxima: <span data-tempo="maxima-1"></span> Graus</div>
+            <div>Temperatura Mínima: <span data-tempo="minima-1"></span> Graus</div>
+            <div data-tempo="data-completa-1"></div>
+            <div>Dia: <span data-tempo="dia-1"></span></div>
+            <div data-tempo="dia-semana-1"></div>
+            <div data-tempo="dia-mes-1"></div>
+        </li>
+        <li>
+            <br>
+            <div><span data-tempo="temperatura-2"></span> Graus</div>
+            <div data-tempo="icone-2"></div>
+            <div><span data-tempo="descricao-2"></span></div>
+            <div>Temperatura Máxima: <span data-tempo="maxima-2"></span> Graus</div>
+            <div>Temperatura Mínima: <span data-tempo="minima-2"></span> Graus</div>
+            <div data-tempo="data-completa-2"></div>
+            <div>Dia: <span data-tempo="dia-2"></span></div>
+            <div data-tempo="dia-semana-2"></div>
+            <div data-tempo="dia-mes-2"></div>
+        </li>
+        <li>
+            <br>
+            <div><span data-tempo="temperatura-3"></span> Graus</div>
+            <div data-tempo="icone-3"></div>
+            <div><span data-tempo="descricao-3"></span></div>
+            <div>Temperatura Máxima: <span data-tempo="maxima-3"></span> Graus</div>
+            <div>Temperatura Mínima: <span data-tempo="minima-3"></span> Graus</div>
+            <div data-tempo="data-completa-3"></div>
+            <div>Dia: <span data-tempo="dia-3"></span></div>
+            <div data-tempo="dia-semana-3"></div>
+            <div data-tempo="dia-mes-3"></div>
+        </li>
+        <li>
+            <br>
+            <div><span data-tempo="temperatura-4"></span> Graus</div>
+            <div data-tempo="icone-4"></div>
+            <div><span data-tempo="descricao-4"></span></div>
+            <div>Temperatura Máxima: <span data-tempo="maxima-4"></span> Graus</div>
+            <div>Temperatura Mínima: <span data-tempo="minima-4"></span> Graus</div>
+            <div data-tempo="data-completa-4"></div>
+            <div>Dia: <span data-tempo="dia-4"></span></div>
+            <div data-tempo="dia-semana-4"></div>
+            <div data-tempo="dia-mes-4"></div>
+        </li>
+    </ol>
+</div>
+
+</body>
+</html>
