@@ -102,6 +102,10 @@ Date.prototype.addAnos = function(anos){
                     elementHtml(el, dados);
                 }
 
+                if(!dados){
+                    console.log("Não foi possivel localizar.");
+                }
+
             });
         }
 
@@ -246,6 +250,11 @@ Date.prototype.addAnos = function(anos){
                 console.log("Não foi possivel encontrar jQuery Cookie Plugin");
                 return null;
             }
+
+            if(!dados){
+                return null;
+            }
+
             var date = new Date();
                 date.addMinutos(1);
 
@@ -714,9 +723,10 @@ Date.prototype.addAnos = function(anos){
 
         function forecastData(data){
 
-            if(data.length == 0){
-                return [];
+            if(data.length == 0 || !data.query.results){
+                return null;
             }
+
 
             var retorno      = { info: {}, hoje: {}, proximos_dias: [] },
                 channel      = data.query.results.channel,
